@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.username">dummy</property>
+		<property name="hibernate.connection.password">dummy</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://ec2-13-233-55-61.ap-south-1.compute.amazonaws.com:5432/mytestdb</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="connection.pool_size">1</property>
+
+		<mapping class="rk.hib.models.student"></mapping>
+
+	</session-factory>
+</hibernate-configuration>
